@@ -128,6 +128,7 @@ function handleLogin() {
           }
           return acc
         }, {})
+        debugger;
         router.push({ path: redirect.value || "/", query: otherQueryParams })
       }).catch(() => {
         loading.value = false
